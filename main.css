@@ -1,0 +1,42 @@
+#wrapper {
+    width: 300px;
+    overflow: hidden;
+}
+
+#wrapper .container {
+    height: 200px;
+    position: relative;
+}
+
+#wrapper .container img {
+    position: absolute;
+    transition: transform 1s;
+    left: 0, top：0;
+}
+
+#wrapper .container img.current {
+    transform: translateX(0);
+    z-index: 1;
+
+}
+
+#wrapper .container img.leave {
+    transform: translateX(-100%);
+    z-index: 0;
+
+}
+
+#wrapper .container img.enter {
+    transform: translateX(100%);
+    z-index: -1;
+}
+
+#wrapper .dot span {
+    outline: 1px solid #ccc;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#wrapper .dot span.red {
+    color: red;
+}
