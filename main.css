@@ -30,13 +30,3 @@
     transform: translateX(100%);
     z-index: -1;
 }
-
-#wrapper .dot span {
-    outline: 1px solid #ccc;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-#wrapper .dot span.red {
-    color: red;
-}

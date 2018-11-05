@@ -1,6 +1,6 @@
 // todo:
 
-let position, timer, $img, len, $dot, lastPosition;
+let position, timer, $img, len, $dot;
 Init();
 
 
@@ -11,6 +11,7 @@ $dot.each((x, item) => {
     })
 })
 
+
 $('#wrapper').on("mouseleave", function () {
     timer = setInterval(function () {
         move(position);
@@ -20,15 +21,21 @@ $('#wrapper').on("mouseleave", function () {
     clearInterval(timer);
 }).trigger("mouseleave")
 
-function move(i) {
 
+
+
+
+
+
+
+
+
+
+
+function move(i) {
     setEnter(setRange(i + 1));
     setCurrent(setRange(i))
     setLeave(setRange(i - 1));
-
-
-    $dot.eq(setRange(i)).addClass("red").siblings().removeClass("red");
-
 }
 
 
